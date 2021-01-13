@@ -1,3 +1,4 @@
+"use strict";
 // vienos eilutes komentaras
 
 /*
@@ -103,3 +104,9 @@ console.log(sayHi);
 
 const justHi = hi + '! 🎅'
 console.log(justHi);
+
+/*
+teksto reiksme gali buti inicijuota:
+    viengubose kabutese
+    dvigubose kabutese
+*/
