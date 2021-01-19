@@ -1,9 +1,9 @@
 // Kintamųjų inicijavimas
-const kintamasis1 = 5;
+const kintamasis1 = 1;
 console.log(kintamasis1)
-const kintamasis2 = 10;
+const kintamasis2 = 5;
 console.log(kintamasis2)
-const kintamasis3 = 15;
+const kintamasis3 = 10;
 console.log(kintamasis3)
 const vardas = 'Andrius';
 console.log(vardas)
@@ -44,3 +44,152 @@ const sujungtiTekstai3 = (klm[4] + ', ' + klm[3] + ', ' + klm[2] + ', ' + klm[1]
 console.log(sujungtiTekstai3)
 const sujungtiTekstArray = (abc[4] + ', ' + abc[3] + ', ' + abc[2] + ', ' + abc[1] + ', ' + abc[0] + ', ' + fgh[4] + ', ' + fgh[3] + ', ' + fgh[2] + ', ' + fgh[1] + ', ' + fgh[0] + ', ' +klm[4] + ', ' + klm[3] + ', ' + klm[2] + ', ' + klm[1] + ', ' + klm[0]);
 console.log(sujungtiTekstArray)
+
+
+// Kintamųjų palyginimas
+// 1
+// a
+if (kintamasis2>kintamasis1) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite dar karta');
+}
+
+// b
+if (kintamasis2<kintamasis1) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite dar karta');
+}
+// c
+if (kintamasis2===kintamasis1) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite dar karta');
+}
+// d
+if (kintamasis2!==kintamasis1) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite dar karta');
+}
+// e
+if (kintamasis2>=kintamasis1) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite dar karta');
+}
+// f
+if (kintamasis2<=kintamasis1) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite dar karta');
+}
+// 2
+console.log(vardas.length);
+console.log(pavarde.length);
+console.log(miestas.length);
+// 3
+// a
+if (vardas.length>pavarde.length) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite dar karta');
+}
+// b
+if (vardas.length<pavarde.length) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite dar karta');
+}
+// c
+if (vardas.length===pavarde.length) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite dar karta');
+}
+// d
+if (vardas.length!==pavarde.length) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite dar karta');
+}
+// e
+if (vardas.length>=pavarde.length) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite dar karta');
+}
+// f
+if (vardas.length<=pavarde.length) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite dar karta');
+}
+// 4
+console.log(pirmaEile.length)
+console.log(antraEile.length)
+console.log(treciaEile.length)
+//5
+//a
+if (pirmaEile.length>antraEile.length) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite dar karta');
+}
+// b
+if (pirmaEile.length<antraEile.length) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite dar karta');
+}
+// c
+if (pirmaEile.length===antraEile.length) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite dar karta');
+}
+// d
+if (pirmaEile.length!==antraEile.length) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite dar karta');
+}
+// e
+if (pirmaEile.length>=antraEile.length) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite dar karta');
+}
+// f
+if (pirmaEile.length<=antraEile.length) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite dar karta');
+}
+// Funkcijos
+// 3. Funkcija pavadinimu “skaitmenuKiekisSkaiciuje”:
+
+function skaitmenuKiekisSkaiciuje(ilgasSkaicius) {
+    if (typeof ilgasSkaicius !== 'number'){
+        return 'Pateikta netinkamo tipo reikšmė'
+    }
+    if (isNaN(ilgasSkaicius)){
+        return 'Pateikta netinkamo tipo reikšmė'
+    }
+    const kintIlgis = ilgasSkaicius.toString().length;
+    return kintIlgis;
+}
+const s1 = skaitmenuKiekisSkaiciuje(5);
+const s2 = skaitmenuKiekisSkaiciuje(781);
+const s3 = skaitmenuKiekisSkaiciuje(37060123456);
+const s4 = skaitmenuKiekisSkaiciuje(true);
+const s5 = skaitmenuKiekisSkaiciuje("asd");
+const s6 = skaitmenuKiekisSkaiciuje(NaN);
+
+console.log(s1)
+console.log(s2)
+console.log(s3)
+console.log(s4)
+console.log(s5)
+console.log(s6)
